@@ -1,0 +1,219 @@
+*, ::before, ::after {
+  box-sizing:border-box;
+}
+ html {
+  scroll-behavior: smooth;
+ }
+body {
+  
+  font-family:Helvetica, sans-serif;
+  font-size:16px;
+  background:#800080;
+  color:aqua;
+ 
+  }
+h2 {
+  margin-top:.5em;
+  margin-bottom:.5em;
+  text-align:center;
+ 
+}
+a {
+  display:inline-block;
+  text-decoration:none;
+  font-weight:bold;
+  color:white;
+  text-transform:uppercase;
+  
+}
+a:hover {
+  background-color:aqua;
+  transition:.5s;
+  padding:0.2em;
+}
+.contact ul {
+  border:1px solid white;
+  
+  display:flex;
+  flex-direction:column;
+ 
+}
+li {
+  list-style:none;
+  margin:1em;
+}
+
+li a {
+  margin-left:1em;
+}
+.container {
+  max-width:1200px;
+  width:98%;
+  margin:auto;
+  
+}
+.aboutme, .projects,.contact {
+    background:black;
+    max-width:50em;
+    padding:2em;
+    margin:2em auto;
+  }
+
+
+.header {
+ margin-bottom:2em;
+  position:relative;
+   padding:1.5em;
+
+height: 400px;
+ background-color:black;
+clip-path: ellipse(85% 100% at 50% 0%);
+}
+.navbar {
+  border:1px solid black;
+  border:none;
+  display:flex;
+  flex-direction:column;
+  line-height:2rem;
+  position:absolute;
+  top:0;
+  left:50%;
+ transform:translateY(-100%);
+  padding:.5em;
+  transition:0.5s;
+  background:purple;
+  
+ }
+.navbar .link {
+  font-size:.8rem;
+}
+  .humicon {
+
+  width:30px;
+  height:15px;
+  margin-top:1em;
+  margin-bottom:1em;
+  cursor:pointer;
+  
+   
+  
+}
+
+.line1, .line2,.line3 {
+  margin:6px 0;
+  border:1px solid ;
+  transition: 0.4s;
+  background:aqua;
+}
+.shownav {
+  
+  transition:0.5s;
+   transform:translateY(0%);
+
+}
+.author {
+  font-size:.8rem;
+}
+
+
+.aboutme .fa-user {
+  font-size:3rem;
+  }
+
+.img-profile {
+  margin-block:2em;
+  margin-inline:auto;
+  max-width:10rem;
+  
+}
+.img-profile img {
+  width:100%;
+  border-radius:50%;
+  
+}
+.img-head {
+    margin-block:2em;
+  margin-inline:auto;
+  max-width:15rem;
+}
+.img-head img {
+  width:100%;
+  border-radius:50%;
+  opacity:.6;
+}
+.projec {
+  margin-top:1em;
+  margin-bottom:1em;
+}
+.projec img {
+  width:100%;
+}
+.copy {
+  font-size: .6rem;
+}
+
+@media(min-width:650px) {
+  
+  .container {
+    max-width:1000px;
+  }
+  .navbar {
+   position:absolute;
+    top:0;
+    left:50%;
+    display:flex;
+    flex-direction:row;
+    max-width:30em;
+    transform:translateY(0%);
+}
+  .navbar .link {
+    margin-inline:.5em;
+    font-size:.78rem;
+  } 
+  .humicon {
+    visibility:hidden;
+  }
+  
+  .intro {
+    display:flex;
+   
+    font-size:1.3rem;
+   }
+  
+  .intro_ident {
+    display:flex;
+    flex-direction:column;
+  }
+  .title_pro{
+    border-bottom: 10px solid;
+    border-radius:8px;
+   
+  }
+  .quotesec {
+    display:flex;
+    flex-direction:column;
+  }
+  .contact ul {
+    display:flex;
+    flex-direction:row;
+    font-size:1.2rem;
+    border:1px solid white;
+    justify-content:center;
+  }
+  .contact li {
+    text-align:center;
+  }
+  }
+
+@media(min-width:800px) {
+  .intro {
+    display:flex;
+    justify-content:space-around;
+  } 
+  .aboutme, .projects,.contact {
+    background:black;
+    max-width:50em;
+    padding:2em;
+    margin:0 auto;
+  }
+}
